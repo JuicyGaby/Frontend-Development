@@ -1,15 +1,228 @@
-*{
-   font-family: 'Poppins', sans-serif;
-   margin:0; padding:0;
-   box-sizing: border-box;
-   outline: none; border:none;
-   text-decoration: none !important;
-   text-transform: capitalize;
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@400;500;600;700&family=Roboto+Mono:wght@700&display=swap');
+
+:root {
+    --background: #FFFFFF;
+    --box-shadow: 0px 4px 12px 6px rgba(0, 0, 0, 0.19);
+    --border-radius: 29px;
 }
 
-html {
-    font-size: 62.5%;  /**10px*/
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-    scroll-padding-top: 6.5rem;
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
 }
+
+section {
+    padding: 5rem 10%;
+}
+
+.picture {
+    position: absolute;
+    margin: 50px 50px 50px 50px;
+    width: 823px;
+    height: 982px;
+    left: 0px;
+    top: 0px;
+    background-color: #F1F1F1;
+}
+
+.picture img {
+    position: absolute;
+    width: 696px;
+    height: 522px;
+    left: 60px;
+    top: 179px;
+}
+
+.heading-title{
+    font-family: 'Montserrat';
+    margin: 50px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 33.472px;
+    line-height: 41px;
+    font-style: bold;
+    cursor: default;
+}
+.paragraph{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14.8765px;
+    line-height: 50px;
+    color: #333333;
+}
+.intro{
+    position: absolute;
+    width: 140px;
+    height: 18px;
+    left: 150px;
+    top: 450px;
+    font-style: bold;
+    font-weight: 400;
+    font-size: 14.8765px;
+    line-height: 18px;
+    color: #333333;
+    cursor: default;
+}
+.again {
+    position: absolute;
+    width: 300px;
+    height: 18px;
+    left: 65px;
+    top: 356x;
+    font-style: bold;
+    font-weight: 400;
+    font-size: 14.8765px;
+    line-height: 840px;
+    color: #333333;
+}
+.again-2  {
+    position: absolute;
+    width: 300px;
+    height: 18px;
+    left: 180px;
+    top: 356x;
+    font-style: bold;
+    font-weight: 400;
+    font-size: 14.8765px;
+    line-height: 840px;
+    color: orange;
+}
+
+.login .navbar a {
+    margin-left: 2px;
+    color: black;
+}
+
+.login .navbar a:hover {
+    color: grey;
+}
+
+
+.login {
+    position: absolute;
+    margin: 50px;
+    width: 425px;
+    height: 634px;
+    left: 957px;
+    top: 160px;
+    box-shadow: 0px 4px 12px 6px rgba(0, 0, 0, 0.19);
+    border-radius: 29px;
+}
+
+.login .login-form {
+    margin:50px 50px 50px 50px;
+    padding: 10px;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    flex: 1 1 41rem;
+}
+
+.login .login-form  .more{
+    margin:50px 0px 0px 0px;
+    padding: 5px;
+    display:flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 5px;
+    flex: 1 1 41rem;
+}
+
+/* .login .login-form .flex-column{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    flex: 1 1 41rem;
+} */
+
+
+/* .login .login-form .flex-column .inputbox{
+    flex: 1 1 41rem;
+} */
+
+
+
+.login .login-form  input{
+    width: 286px;
+    height: 36px;
+    padding: 9px 18px;
+    gap: 10px;
+    
+    font-size: 14.8765px;
+    color:grey;
+    text-transform: none;
+    margin-top: 1.5rem;
+    background: #FFFFFF;
+    border: 1px solid #B4B4B4;
+    border-radius: 5px;
+}
+
+
+.login .login-form  input:focus{
+    background: white;
+    color: black;
+}
+
+.login .login-form input:focus::placeholder{
+    color: grey;
+}
+
+
+
+.login .login-form .btn  {
+    width: 286px;
+    height: 40px;
+    display: inline-block;
+    background: orangered;
+    margin-top: 1.5rem;
+    color: white;
+    font-size: 20px;
+    font-style: bold;
+    cursor: pointer;
+}
+
+.login .login-form .btn:hover {
+    background: orange;
+}
+
+.login .login-form .more .btn  {
+    width: 134px;
+    height: 40px;
+    display: inline-block;
+    background:  #F1F1F1;
+    margin-top: .1px;
+    color: orange;
+    font-size: 20px;
+    font-style: bold;
+    cursor: pointer;
+}
+
+.login .login-form .more .btn:hover {
+    background: grey;
+}
+
+.login .login-form .more a{
+    width: 100px;
+    height: 36px;
+    padding: 8px 10px;
+    gap: 10px;
+    
+    font-size: 14.8765px;
+    color:grey;
+    text-transform: none;
+    margin-top: 1.5rem;
+    background: #FFFFFF;
+    border: 1px solid #B4B4B4;
+    border-radius: 5px;
+}
+
+
+
