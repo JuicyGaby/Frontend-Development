@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Admin Page</title>
     <!-- font awesome cdn link -->
     <link
       rel="stylesheet"
@@ -15,9 +15,46 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="../css/style.css" />
+    <!-- local css link -->
+    <link rel="stylesheet" href="/css/admin.css" />
   </head>
-  <title>Admin Page</title>
-  <body></body>
-  <script src="../js/script.js"></script>
+  <body>
+    <div class="main-container d-flex">
+      <div class="sidebar" id="side_nav">
+        <div class="header-box px-2 pt-3 pb-4">
+          <h1 class="fs-4">
+            <span class="bg-white text-dark shadow rounded px-2 mx-2">LOGO</span
+            ><span class="text-white">ePing!</span>
+          </h1>
+          <button class="btn d-md-none d-block close-btn px-1 py-0 text-white">
+            <i class="fas fa-stream"></i>
+          </button>
+        </div>
+        <ul class="list-unstyled px-3">
+          <li>
+            <a href="#"><i class="fa-solid fa-chart-line"></i> Dashboard</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-compass"></i> Hotspot</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-bell"></i> Notification</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-regular fa-newspaper"></i> News</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-bookmark"></i> Saved</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-gear"></i> Settings</a>
+          </li>
+        </ul>
+
+        <hr class="h-color mx-3" />
+      </div>
+
+      <div class="content"></div>
+    </div>
+  </body>
 </html>
