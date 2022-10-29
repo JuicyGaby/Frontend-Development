@@ -5,6 +5,7 @@
     /* preset colors */
     --darkred: #591515;
     --lightred: #F22E2E;
+    --medred: #da2626;
     --greyred: #8C6C61;
     --black:#08080D;
     --white:#fff;
@@ -32,8 +33,8 @@ html {
 }
 .container {
     display: flex;
-    height: 100vh;
-    width: 100%;
+    height: 100vh; width: 100%;
+    
 }
 section {
     padding: 2rem;
@@ -46,14 +47,14 @@ section {
     width: 70%;
 }
 .dot {
-    height: 5rem;
-    width: 5rem;
+    height: 5rem; width: 5rem;
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
+    cursor: pointer;
 }
 .login {
-    width: 30%;
+    width: 40%;
     display: flex;
     align-items: center;
     justify-content: center ;
@@ -64,7 +65,7 @@ section {
 .login .login-field {
     width: 90%;
 }
-.login .login-field h2 {
+.login .login-field h1 {
     font-size: 4rem;
     font-weight: 700;
     font-style: bold;
@@ -73,29 +74,38 @@ section {
 .login .login-field .input-field {
     display: flex;
     flex-direction: column;
+    
 }
 .login .login-field .input-field input {
-    border: 1px solid black;
     margin: 1rem 0;
     padding: 0 1rem;
     border-radius: .5rem;
     height: 4rem;
-    border: .1rem solid #B4B4B4;
+    border: 1px solid #B4B4B4;
+    transition: all 1s ease-in-out;
+}
+
+.login .login-field .input-field input:focus {
+    border: 2px solid var(--lightred);
 }
 .login .login-field .forgot {
+    font-size: 1rem;
     display: flex;
     width: 100%;
     justify-content: flex-end;
 }
 .login .login-field .input-field button {
-    /* align-self: center;  */
-    background-color: var(--lightred);
+    background-color: var(--medred);
     color: var(--white);
     margin: 3rem 0;
     padding: 1.5rem;
     border-radius: 1rem;
     cursor: pointer;
     font-size: 1.5rem;
+    transition: all .2s ease;
+}
+.login .login-field .input-field button:hover {
+    background-color: var(--lightred);
 }
 .login .login-field .input-field p {
     font-size: 1.3rem;
