@@ -60,10 +60,6 @@ section {
     justify-content: center ;
 }
 .login a {
-    color: var(--medred);
-    transition: all .3s ease;
-}
-.login a:hover {
     color: var(--lightred);
 }
 .login .login-field {
