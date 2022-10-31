@@ -1,42 +1,66 @@
-<DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/style.css">
-        <title>Sign Up</title>
-    </head>
-        <body>    
-            <section class="signup">
-                    <h1 class="heading-title">Sign Up</h1>
-    
-                    <div class="signup-details">
-                        <input type="text" class="box1" placeholder="First Name">
-                        <input type="text" class="box2" placeholder="Last Name">
-                        <input type="text" class="box3" placeholder="Phone Number">
-                        <input type="text" class="box4" placeholder="Address">
-                        <input type="text" class="box5" placeholder="Email">
-                        <input type="text" class="box6" placeholder="Confirm Email">
-                        <input type="text" class="box7" placeholder="Password">
-                        <input type="text" class="box8" placeholder="Confirm Password">
-    
-                        <input type="submit" value="Sign Up" class="btn" name="send">
-    
-                                <h2 class="again">Already have an account?</h2>
-                                <a href="Signup.html" class="log">Login</a>    
-    
-                    </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div>
+        <form action="">
+            <div style="margin: 0.875rem 1.25rem;">
+                <h2>Sign Up</h2>
             </div>
-        </section>
-        </body>
-    </html>
-    
-    
-    
-    
-    
-    
 
-    
-    
+            <div>
+                <div class="input-container">
+                    <input
+                        placeholder="First Name" 
+                        type="text">
+                        <input
+                        placeholder="Last Name" 
+                        type="text">
+                        <input
+                        placeholder="Phone Number" 
+                        type="text">
+                </div>
+                <div class="input-container">
+                    <input
+                        placeholder="Address"
+                        style="flex-grow: 1;"
+                        type="text">
+                </div>
+                <div class="input-container">
+                    <input
+                        placeholder="Email" 
+                        style="flex-grow: 1;"
+                        type="text">
+                    <input
+                        placeholder="Confirm Email" 
+                        style="flex-grow: 1;"
+                        type="text">
+                </div>
+                <div class="input-container">
+                    <input
+                        placeholder="Password" 
+                        style="flex-grow: 1;"
+                        type="text">
+                    <input
+                        placeholder="Confirm Password" 
+                        style="flex-grow: 1;"
+                        type="text">
+                </div>
+                <div class="button-container">
+                    <button>Sign Up</button>
+                </div>
+            </div>
+
+            <div style="margin: 0 1.25rem; color: #838383; font-size: x-small; padding-top: 1.25rem;">
+                Already have an account? <a href="#">Login.</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
