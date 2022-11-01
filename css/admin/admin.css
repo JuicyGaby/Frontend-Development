@@ -119,4 +119,5 @@ section {
     height: 3rem; width: 3rem;
     background-color: gray;
     border-radius: 50%;
+    cursor: pointer;
 }
