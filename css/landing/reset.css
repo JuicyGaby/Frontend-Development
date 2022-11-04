@@ -20,6 +20,7 @@
    font-family: 'Poppins', sans-serif;
    margin:0; padding:0;
    box-sizing: border-box;
+   text-decoration: none !important;
    outline: none; border:none;
    /* text-transform: capitalize; */
 }
@@ -31,59 +32,80 @@ html {
     scroll-padding-top: 6.5rem;
 }
 section {
-    padding: 4rem;
     height: 100vh;
     width: 100%;
-    background: url(/imgs/signupbg.jpg);
-    background-position: center;
+    padding: 3rem;
+    background: url(/imgs/signupbg.jpg) no-repeat center;
     background-size: cover;
-    background-repeat: no-repeat;
 }
 nav {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 }
 nav span {
-    height: 4.5rem; width: 4.5rem;
-    background-color: var(--light-color);
+    height: 4rem; width: 4rem;
+    background-color: gray;
     display: inline-block;
     border-radius: 50%;
-    cursor: pointer;
 }
-nav ul li{
-    display: inline-block;
-    margin-left: 3rem;
-    cursor: pointer;
+nav ul {
+    display: flex;
+    text-decoration: none;
+}
+nav ul li {
     background-color: var(--white);
-    width: 5rem;
-    padding: .5rem;
+    margin-right: 5rem;
+    list-style: none;
+    font-size: 1.3rem;
     text-align: center;
+    padding: .5rem 1rem;
     border-radius: 3rem;
 }
-section .signup-container {
+section .content {
+    height: 95%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-section .signup-container .signup-form {
+section .content .reset_form {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin-top: -10rem;
+    width: 40%;
+    height: 40%;
     background-color: var(--white);
-    width: 60%;
-    height: 60rem;
-    border-radius: 3rem;
     box-shadow: var(--box-shadow);
-    padding: 5rem 6rem;
+    align-items: center;
+    /* justify-content: center; */
+
 }
-.signup-form h1 {
-    font-size: 3.5rem;
-    margin-bottom: 4rem;
+.reset_form .reset_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid black; */
+    width: 80%;
+    align-self: center;
 }
-.signup-form h1 span {
-    color: var(--lightred);
+.reset_container > div {
+    padding: 1rem;
+    /* border:1px solid black; */
+    width: 90%;
 }
-.input-fields input {
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+label {
+    font-size: 2rem;
+    /* margin-right: 2rem; */
+}
+input {
     border: 1px solid var(--light-color);
-    width: 30%;
+    width: 100%;
     height: 4rem;
     padding: 0 2rem;
     border-radius: .5rem;
@@ -91,41 +113,14 @@ section .signup-container .signup-form {
     transition: all .3s ease-in-out;
     background: #f4f4f4;
 }
-.input-fields input:focus {
+input:focus {
     border: 2px solid var(--lightred);
 }
-.row1, .row2, .row3, .row4{
-    display:flex;
-}
-.row1, .row3, .row4 {
-    justify-content:space-between;
-}
-.row2 input {
-    width: 100%;
-}
-.row3 input{
-    width: 48%;
-}
-.row4 input{
-    width: 48%;
-}
-.submission {
-    display: flex;
-    flex-direction: column;
-}
-.submission button {
-    width: 50%; height: 5rem;
-    border-radius: .5rem;
-    align-self: center;
-    margin-bottom: 3rem;
-    cursor: pointer;
+button {
+    height: 4rem;
+    width: 10rem;
     background-color: var(--lightred);
-    color: var(--white);
-}
-.submission p {
-    font-size: 1.2rem;
-}
-.submission a {
-    color: var(--lightred);
-    text-decoration: underline;
+    color: white;
+    border-radius: .5rem;
+    cursor: pointer;
 }
