@@ -15,8 +15,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css"
     />
-    <!-- local css link -->
+    <!-- local admin css link -->
     <link rel="stylesheet" href="/css/admin/admin.css" />
+    <link rel="stylesheet" href="/css/admin/admin_module.css">
+
+
+    <!-- local js file -->
+    <script defer src="/js/admin/admin_module.js"></script>
   </head>
   <body>
     <!-- main container starts -->
@@ -41,19 +46,19 @@
 
         <!-- top navigation side panel starts-->
         <ul class="list-unstyled">
-          <li class="">
+          <li>
             <a class="px-3 py-2 d-block" href="/html/admin/admin.html"
               ><i class="fa-solid fa-chart-line"></i> Dashboard</a
             >
           </li>
-          <li class="active">
+          <li class="">
             <a class="px-3 py-2 d-block" href="/html/admin/admin_manage.html"
               ><i class="fa-solid fa-bars-progress"></i> Manage</a
             >
           </li>
-          <li class="">
+          <li class="active">
             <a class="px-3 py-2 d-block" href="/html/admin/admin_module.html"
-              ><i class="fa-solid fa-book"></i> Module</a
+              ><i class="fa-solid fa-book"></i></i> Module</a
             >
           </li>
         </ul>
@@ -74,10 +79,22 @@
       <!-- sidebar div ends -->
 
       <div class="content">
-        <section class="hero"></section>
+        <section class="hero">
+          <div class="module-top">
+            <h1>Module Management</h1>
+            <input type="text" placeholder="Search Module...">
+          </div>
+          <div class="module-action">
+              <button class="add-module" id="add-btn"><i class="fa-solid fa-circle-plus"></i>Create Module</button>
+          </div>
+          <div class="module-display">
+
+          </div>
+        </section>
+        <div id="add-popup">
+          
+        </div>
       </div>
     </div>
-    <!-- main container ends -->
-    <script src="../js/admin.js"></script>
   </body>
 </html>

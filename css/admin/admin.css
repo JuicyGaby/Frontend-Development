@@ -68,6 +68,7 @@ section {
 }
 .content {
     width: 100%;
+    position: relative;
 }
 .top-bar input {
     width: 50rem;
