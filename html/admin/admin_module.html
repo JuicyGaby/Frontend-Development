@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin Page</title>
+    <title>Admin : Module</title>
     <!-- font awesome cdn link -->
     <link
       rel="stylesheet"
@@ -81,25 +81,70 @@
       <div class="content">
         <section class="hero">
           <div class="module-top">
-            <h1>Module Management</h1>
+            <h1><span>Module</span> Management</h1>
             <input type="text" placeholder="Search Module...">
           </div>
           <div class="module-action">
               <button class="add-module" id="add-btn"><i class="fa-solid fa-circle-plus"></i>Create Module</button>
           </div>
           <div class="module-display">
-            <div class="moduletable">
-              
+            <div class="module-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Cover</th>
+                    <th>Options</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>loreasd</td> 
+                    <td>loreasd</td>
+                    <td>loreasd</td>
+                    <td>loreasd</td>
+                    <td class="action">
+                      <button class="update-btn"><i class="fa-solid fa-pen"></i></button>
+                      <button class="delete-btn"><i class="fa-solid fa-trash"></i>  </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>loreasd</td> 
+                    <td>loreasd</td>
+                    <td>loreasd</td>
+                    <td>loreasd</td>
+                    <td class="action">
+                      <button class="update-btn"><i class="fa-solid fa-pen"></i></button>
+                      <button class="delete-btn"><i class="fa-solid fa-trash"></i>  </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>loreasd</td> 
+                    <td>loreasd</td>
+                    <td>loreasd</td>
+                    <td>loreasd</td>
+                    <td class="action">
+                      <button class="update-btn"><i class="fa-solid fa-pen"></i></button>
+                      <button class="delete-btn"><i class="fa-solid fa-trash"></i>  </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </section>
+        <!-- * module popup -->
+
         <div id="add-popup">
           <div class="input-fields">
+            <div class="close"><a href=""><i class="fa-solid fa-xmark"></i></a></div>
             <div>
               <input type="text" placeholder="Module Title" class="module-title">
             </div>
             <div>
-              <textarea name="" id="" cols="30" rows="10"></textarea>
+              <textarea name="" id="" cols="30" rows="10" placeholder="Module Description here...."></textarea>
             </div>
             <div class="upload-file">
                 <label for="">Select file</label>
