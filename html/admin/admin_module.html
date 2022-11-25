@@ -77,25 +77,35 @@
         <!-- bottom navigation side panel ends-->
       </div>
       <!-- sidebar div ends -->
+      <!-- *module content starts -->
+
 
       <div class="content">
         <section class="hero">
           <div class="module-top">
             <h1><span>Module</span> Management</h1>
-            <input type="text" placeholder="Search Module...">
           </div>
           <div class="module-action">
+              <input type="text" placeholder="Search Module . . .    &#xF002;">
               <button class="add-module" id="add-btn"><i class="fa-solid fa-circle-plus"></i>Create Module</button>
+          </div>
+          <div class="module-sort">
+              <select name="" id="">
+                <<option disabled selected value> -- Select Emergency Key Actor -- </option>
+                <option value="">2</option>
+                <option value="">3</option>
+              </select>
+              <button>Sort</button>
           </div>
           <div class="module-display">
             <div class="module-table">
               <table>
                 <thead>
                   <tr>
-                    <th>ID</th>
-                    <th>Title</th>
-                    <th>Description</th>
-                    <th>Cover</th>
+                    <th>Module ID</th>
+                    <th>Module Title</th>
+                    <th>Module Description</th>
+                    <th>Module EKA</th>
                     <th>Options</th>
                   </tr>
                 </thead>
@@ -130,9 +140,33 @@
                       <button class="delete-btn"><i class="fa-solid fa-trash"></i>  </button>
                     </td>
                   </tr>
+                  <tr>
+                    <td>loreasd</td> 
+                    <td>loreasd</td>
+                    <td>loreasd</td>
+                    <td>loreasd</td>
+                    <td class="action">
+                      <button class="update-btn"><i class="fa-solid fa-pen"></i></button>
+                      <button class="delete-btn"><i class="fa-solid fa-trash"></i>  </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>loreasd</td> 
+                    <td>loreasd</td>
+                    <td>loreasd</td>
+                    <td>loreasd</td>
+                    <td class="action">
+                      <button class="update-btn"><i class="fa-solid fa-pen"></i></button>
+                      <button class="delete-btn"><i class="fa-solid fa-trash"></i>  </button>
+                    </td>
+                  </tr>
                 </tbody>
               </table>
             </div>
+          </div>
+          <div class="module-pagination">
+            <button><i class="fa-solid fa-chevron-left"></i></button>
+            <button><i class="fa-solid fa-chevron-right"></i></button>
           </div>
         </section>
         <!-- * module popup -->
@@ -146,10 +180,16 @@
             <div>
               <textarea name="" id="" cols="30" rows="10" placeholder="Module Description here...."></textarea>
             </div>
+            <div class="select-eka">
+                <select name="" id="">
+                  <option disabled selected value> -- Select Emergency Key Actor -- </option>
+                  <option value="">1</option>
+                  <option value="">1</option>
+                </select>
+            </div>
             <div class="upload-file">
                 <label for="">Select file</label>
                 <input type="file" class="">
-            
             </div>
             <div class="submit-module">
               <button><i class="fa-solid fa-upload"></i>Upload Module</button>

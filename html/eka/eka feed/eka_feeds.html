@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feeds Page</title>
+    <!-- font awesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- bootstrap cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css"
+    />
+    <!-- local css link -->
+    <link rel="stylesheet" href="/css/admin/admin.css" />
+    <link rel="stylesheet" href="/css/eka/eka feed/eka_feeds.css" />
+
+    <!-- local js file -->
+    <script defer src="/js/eka/eka_feeds.js"></script>
+  </head>
+  <body>
+    <!-- main container starts -->
+
+    <div class="main-container d-flex">
+      <!-- sidebar div starts -->
+
+      <div class="sidebar shadow" id="side_nav">
+        <!-- sidebar top starts -->
+
+        <div class="header-box px-2 pt-3 pb-4">
+          <h1 class="fs-4">
+            <span class="bg-white text-dark shadow rounded px-2 mx-2">LOGO</span
+            ><span class="text-black">ePing!</span>
+          </h1>
+          <button class="btn d-md-none d-block close-btn px-1 py-0 text-white">
+            <i class="fas fa-stream"></i>
+          </button>
+        </div>
+
+        <!-- sidebar top ends -->
+
+        <!-- top navigation side panel starts-->
+        <ul class="list-unstyled">
+          <li class="">
+            <a class="px-3 py-2 d-block" href="#"
+              ><i class="fa-solid fa-chart-line"></i> Dashboard</a
+            >
+          </li>
+          <li class="active">
+            <a class="px-3 py-2 d-block" href=""
+              ><i class="fa-solid fa-bars-progress"></i> Feeds</a
+            >
+          </li>
+          <li class="">
+            <a class="px-3 py-2 d-block" href=""
+              ><i class="fa-sharp fa-solid fa-bell"></i> Notification</a
+            >
+          </li>
+        </ul>
+
+        <!-- top navigation side panel ends-->
+        <hr class="h-color mx-3" />
+
+        <!-- bottom navigation side panel starts-->
+        <ul class="list-unstyled">
+          <li>
+            <a class="px-3 py-2 d-block" href="#"
+              ><i class="fa-solid fa-right-from-bracket"></i> Logout</a
+            >
+          </li>
+        </ul>
+        <!-- bottom navigation side panel ends-->
+      </div>
+      <!-- sidebar div ends -->
+
+      <div class="content">
+        <section class="hero">
+          <div class="module-top">
+            <h1><span>Feeds</span> Management</h1>
+          </div>
+          <div class="manage-links">
+            <ul>
+              <li><a href="" class="active">Feeds</a></li>
+              <li><a href="">Modules</a></li>
+            </ul>
+            <hr />
+          </div>
+          <div class="module-action">
+            <input type="text" placeholder="Search Post..." />
+            <button class="add-module" id="add-btn">
+              <i class="fa-solid fa-feather-pointed"></i>Create Post
+            </button>
+          </div>
+          <div class="module-display">
+            <div class="module-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Post ID</th>
+                    <th>Post Title</th>
+                    <th>Post Description</th>
+                    <th>Expiry Date</th>
+                    <th>Options</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>loreasd</td>
+                    <td>loreasd</td>
+                    <td>loreasd</td>
+                    <td>loreasd</td>
+                    <td class="action">
+                      <button class="update-btn">
+                        <i class="fa-solid fa-pen"></i>
+                      </button>
+                      <button class="delete-btn">
+                        <i class="fa-solid fa-trash"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>loreasd</td>
+                    <td>loreasd</td>
+                    <td>loreasd</td>
+                    <td>loreasd</td>
+                    <td class="action">
+                      <button class="update-btn">
+                        <i class="fa-solid fa-pen"></i>
+                      </button>
+                      <button class="delete-btn">
+                        <i class="fa-solid fa-trash"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>loreasd</td>
+                    <td>loreasd</td>
+                    <td>loreasd</td>
+                    <td>loreasd</td>
+                    <td class="action">
+                      <button class="update-btn">
+                        <i class="fa-solid fa-pen"></i>
+                      </button>
+                      <button class="delete-btn">
+                        <i class="fa-solid fa-trash"></i>
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+        <!-- * module popup -->
+
+        <div id="add-popup">
+          <div class="input-fields">
+            <div class="close">
+              <a href=""><i class="fa-solid fa-xmark"></i></a>
+            </div>
+            <div>
+              <input
+                type="text"
+                placeholder="Post Title"
+                class="module-title"
+              />
+            </div>
+            <div>
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Post Description here...."
+              ></textarea>
+            </div>
+            <div class="upload-file">
+              <label for="">Select <strong>Cover</strong> : </label>
+              <input type="file" class="" />
+            </div>
+            <div class="upload-file">
+              <label for="">Select <strong>Files</strong> : </label>
+              <input type="file" class="" />
+            </div>
+            <div class="feed-type">
+              <label for="">Set Feed Type : </label>
+              <select name="" id="">
+                <option value="">High</option>
+                <option value="">Medium</option>
+                <option value="">Low</option>
+              </select>
+            </div>
+            <div class="exp-date">
+              <label for="">Set Expiration Date : </label>
+              <input type="date" />
+            </div>
+            <div class="submit-module">
+              <button><i class="fa-solid fa-upload"></i>Upload Post</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- main container ends -->
+  </body>
+</html>
