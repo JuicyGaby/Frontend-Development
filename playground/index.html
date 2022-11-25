@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin Page</title>
+    <title>Admin : Module</title>
     <!-- font awesome cdn link -->
     <link
       rel="stylesheet"
@@ -15,8 +15,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css"
     />
-    <!-- local css link -->
+    <!-- local admin css link -->
     <link rel="stylesheet" href="/css/admin/admin.css" />
+    <link rel="stylesheet" href="/css/admin/admin_module.css">
+
+
+    <!-- local js file -->
+    <script defer src="/js/admin/admin_module.js"></script>
   </head>
   <body>
     <!-- main container starts -->
@@ -41,14 +46,19 @@
 
         <!-- top navigation side panel starts-->
         <ul class="list-unstyled">
-          <li class="active">
-            <a class="px-3 py-2 d-block" href="#"
+          <li>
+            <a class="px-3 py-2 d-block" href="/html/admin/admin.html"
               ><i class="fa-solid fa-chart-line"></i> Dashboard</a
             >
           </li>
           <li class="">
-            <a class="px-3 py-2 d-block" href=""
+            <a class="px-3 py-2 d-block" href="/html/admin/admin_manage.html"
               ><i class="fa-solid fa-bars-progress"></i> Manage</a
+            >
+          </li>
+          <li class="active">
+            <a class="px-3 py-2 d-block" href="/html/admin/admin_module.html"
+              ><i class="fa-solid fa-book"></i></i> Module</a
             >
           </li>
         </ul>
@@ -67,11 +77,126 @@
         <!-- bottom navigation side panel ends-->
       </div>
       <!-- sidebar div ends -->
+      <!-- *module content starts -->
+
 
       <div class="content">
-        <section class="hero"></section>
+        <section class="hero">
+          <div class="module-top">
+            <h1><span>Module</span> Management</h1>
+          </div>
+          <div class="module-action">
+              <input type="text" placeholder="Search Module . . .    &#xF002;">
+              <button class="add-module" id="add-btn"><i class="fa-solid fa-circle-plus"></i>Create Module</button>
+          </div>
+          <div class="module-sort">
+              <select name="" id="">
+                <<option disabled selected value> -- Select Emergency Key Actor -- </option>
+                <option value="">2</option>
+                <option value="">3</option>
+              </select>
+              <button>Sort</button>
+          </div>
+          <div class="module-display">
+            <div class="module-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Module ID</th>
+                    <th>Module Title</th>
+                    <th>Module Description</th>
+                    <th>Module EKA</th>
+                    <th>Options</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>loreasd</td> 
+                    <td>loreasd</td>
+                    <td>loreasd</td>
+                    <td>loreasd</td>
+                    <td class="action">
+                      <button class="update-btn"><i class="fa-solid fa-pen"></i></button>
+                      <button class="delete-btn"><i class="fa-solid fa-trash"></i>  </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>loreasd</td> 
+                    <td>loreasd</td>
+                    <td>loreasd</td>
+                    <td>loreasd</td>
+                    <td class="action">
+                      <button class="update-btn"><i class="fa-solid fa-pen"></i></button>
+                      <button class="delete-btn"><i class="fa-solid fa-trash"></i>  </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>loreasd</td> 
+                    <td>loreasd</td>
+                    <td>loreasd</td>
+                    <td>loreasd</td>
+                    <td class="action">
+                      <button class="update-btn"><i class="fa-solid fa-pen"></i></button>
+                      <button class="delete-btn"><i class="fa-solid fa-trash"></i>  </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>loreasd</td> 
+                    <td>loreasd</td>
+                    <td>loreasd</td>
+                    <td>loreasd</td>
+                    <td class="action">
+                      <button class="update-btn"><i class="fa-solid fa-pen"></i></button>
+                      <button class="delete-btn"><i class="fa-solid fa-trash"></i>  </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>loreasd</td> 
+                    <td>loreasd</td>
+                    <td>loreasd</td>
+                    <td>loreasd</td>
+                    <td class="action">
+                      <button class="update-btn"><i class="fa-solid fa-pen"></i></button>
+                      <button class="delete-btn"><i class="fa-solid fa-trash"></i>  </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="module-pagination">
+            <button><i class="fa-solid fa-chevron-left"></i></button>
+            <button><i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+        </section>
+        <!-- * module popup -->
+
+        <div id="add-popup">
+          <div class="input-fields">
+            <div class="close"><a href=""><i class="fa-solid fa-xmark"></i></a></div>
+            <div>
+              <input type="text" placeholder="Module Title" class="module-title">
+            </div>
+            <div>
+              <textarea name="" id="" cols="30" rows="10" placeholder="Module Description here...."></textarea>
+            </div>
+            <div class="select-eka">
+                <select name="" id="">
+                  <option disabled selected value> -- Select Emergency Key Actor -- </option>
+                  <option value="">1</option>
+                  <option value="">1</option>
+                </select>
+            </div>
+            <div class="upload-file">
+                <label for="">Select file</label>
+                <input type="file" class="">
+            </div>
+            <div class="submit-module">
+              <button><i class="fa-solid fa-upload"></i>Upload Module</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <!-- main container ends -->
   </body>
 </html>
