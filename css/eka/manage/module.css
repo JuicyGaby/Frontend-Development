@@ -80,7 +80,7 @@ nav ul li a.active span {
 /* *module table starts */
 
 .module-table {
-    margin: 3em 0;
+    margin: 2em 0;
 }
 .module-table table, th, td{
     border: solid 2px #d1cfcf; 
@@ -121,85 +121,7 @@ table td {
     background-color: var(--redBtn);
 }
 
-.module-pagination {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2em;
-}
-.module-pagination button {
-    text-align: center;
-    font-size: 2rem;
-    height: 4rem; width: 4rem;
-    color: white;
-    background-color: var(--createBtn);
-    border-radius: 1rem;
-}
 /* module table ends */
-/* *filter popup starts*/
-#filter-popup {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 30%;
-    height: 30%;
-    visibility: hidden;
-    transform: translate(-50%, -50%) scale(0.01);
-    background: var(--white);
-    box-shadow: var(--box-shadow);
-    border-radius: 2rem;
-    padding: 1em 1.5em;
-    display: flex;
-    flex-direction: column;
-    transition: transform 0.2s;
-}
-#filter-popup.active {
-    visibility: visible;
-    transform: translate(-50%, -50%) scale(1);
-}
-#filter-popup span {
-    cursor: pointer;
-    font-size: 1.5rem;
-    color: var(--light-color);
-}
-h3 {
-    align-self: center;
-}
-.select-fields {
-    display: flex;
-    flex-direction: column;
-    gap: 2em;
-    margin: 1em 0;
-    padding: 0 3.5em;
-}
-.select-fields label {
-    font-size: 1.3rem;
-    font-weight: bold;
-}
-.select-fields div {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 2em 0 0;
-}
-.select-fields input {
-    border: var(--border);
-    width: 60%;
-    height: 2.5rem;
-}
-.select-fields select {
-    width: 60%;
-    height: 2.5rem;
-}
-.select-fields button {
-    height: 3rem;
-    font-size: 1.5rem;
-    border-radius: 3rem;
-    color: var(--white);
-    background-color: var(--createBtn);
-}
-
-/* filter popup ends */
 /* *module popup */
 #module-popup {
     position: absolute;

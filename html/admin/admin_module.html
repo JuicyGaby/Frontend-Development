@@ -73,6 +73,7 @@
         </ul>
         <!-- bottom navigation side panel ends-->
       </div>
+
       <!-- sidebar div ends -->
       <!-- *module content starts -->
 
@@ -83,7 +84,7 @@
           <h1>Module Management</h1>
           <nav>
             <ul>
-              <li><a href="" class=""><span></span>Feed</a></li>
+              <!-- <li><a href="" class=""><span></span>Feed</a></li> -->
               <li><a href="" class="active"><span></span>Module</a></li>
             </ul>
           </nav>
@@ -163,7 +164,34 @@
                 </tbody>
               </table>
             </div>
+          <div class="module-pagination">
+            <button id="prev-btn"><i class="fa-solid fa-caret-left"></i></button>
+            <button id="next-btn"><i class="fa-solid fa-caret-right"></i></button>
+          </div>  
         </section>
+        <!-- *filter popup -->
+        <div id="filter-popup">
+          <div class="close-action">
+            <span id="filter-close-btn"><i class="fa-solid fa-circle-xmark"></i></span>
+          </div>
+          <h3>Module Filter</h3>
+          <hr>
+          <div class="select-fields">
+            <div class="">
+              <label for="">Choose Date : </label>
+              <input type="date" name="" id="">
+            </div>
+            <div class="">
+              <label for="">Posted By : </label>
+              <select name="" id="">
+                <option value="">1</option>
+                <option value="">1</option>
+              </select>
+            </div>
+            <button>Filter</button>
+          </div>
+
+        </div>
         <!-- * module popup -->
         <div id="module-popup">
           <div class="close-action">

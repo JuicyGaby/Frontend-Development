@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin : Module</title>
+    <!-- font awesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <!-- bootstrap cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css"
+    />
+    <!-- local admin css link -->
+    <link rel="stylesheet" href="/css/admin/module/update_module.css">
+  </head>
+  <body>
+    <!-- main container starts -->
+
+    <div class="main-container d-flex">
+      <!-- sidebar div starts -->
+
+      <div class="sidebar shadow" id="side_nav">
+        <!-- sidebar top starts -->
+
+        <div class="header-box px-2 pt-3 pb-4">
+          <h1 class="fs-4">
+            <span class="bg-white text-dark shadow rounded px-2 mx-2">LOGO</span
+            ><span class="text-black">ePing!</span>
+          </h1>
+          <button class="btn d-md-none d-block close-btn px-1 py-0 text-white">
+            <i class="fas fa-stream"></i>
+          </button>
+        </div>
+
+        <!-- sidebar top ends -->
+
+        <!-- top navigation side panel starts-->
+        <ul class="list-unstyled">
+          <li>
+            <a class="px-3 py-2 d-block" href="/html/admin/admin.html"
+              ><i class="fa-solid fa-chart-line"></i> Dashboard</a
+            >
+          </li>
+          <!-- <li class="">
+            <a class="px-3 py-2 d-block" href="/html/admin/admin_manage.html"
+              ><i class="fa-solid fa-bars-progress"></i> Manage</a
+            >
+          </li> -->
+          <li class="active">
+            <a class="px-3 py-2 d-block" href="/html/admin/admin_module.html"
+              ><i class="fa-solid fa-book"></i></i> Management</a
+            >
+          </li>
+        </ul>
+
+        <!-- top navigation side panel ends-->
+        <hr class="h-color mx-3" />
+
+        <!-- bottom navigation side panel starts-->
+        <ul class="list-unstyled">
+          <li>
+            <a class="px-3 py-2 d-block" href="#"
+              ><i class="fa-solid fa-right-from-bracket"></i> Logout</a
+            >
+          </li>
+        </ul>
+        <!-- bottom navigation side panel ends-->
+      </div>
+
+      <!-- sidebar div ends -->
+      <!-- *module content starts -->
+
+
+      <div class="content">
+        <section class="hero">
+            <h1>Update Module</h1>
+            <h2>Module Name</h2>
+            <hr>
+            <div class="update-module-contents">
+                <div>
+                    <h3>Manage Files</h3>
+                    <div class="materials-uploaded">  
+                        <div class="material-content">
+                            <a href="">Sample File</a>
+                            <div class="actions">
+                                <button class="download-btn"><i class="fa-solid fa-download"></i></button>
+                                <button class="edit-btn"><i class="fa-solid fa-pen"></i></button>
+                                <button class="delete-btn"><i class="fa-solid fa-trash"></i> </button>
+                            </div>
+                        </div>
+                        <div class="material-content">
+                            <a href="">Sample File</a>
+                            <div class="actions">
+                                <button class="download-btn"><i class="fa-solid fa-download"></i></button>
+                                <button class="edit-btn"><i class="fa-solid fa-pen"></i></button>
+                                <button class="delete-btn"><i class="fa-solid fa-trash"></i> </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="add-materials">
+                    <h3>Add Files</h3>
+                    <div class="add-content">
+                        <div>
+                            <label for="">Topic title</label>
+                            <input type="text" placeholder="Topic Title">
+                        </div>
+                        <div>
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Topic Description"></textarea>
+                        </div>
+                        <div class="">
+                            <label for="">Material file</label>
+                            <input multiple type="file" placeholder="Module Title">
+                        </div>
+                    </div>
+                </div>
+                <div class="materials-info">
+                    <h3>Manage Information</h3>
+                    <div class="materials-info-content">
+                        <div>
+                            <label for="">Module title</label>
+                            <input type="text" placeholder="Module Title">
+                        </div>
+                        <div>
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Module Description"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="update-section">
+                <button>Update</button>
+            </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

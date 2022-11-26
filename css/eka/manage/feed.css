@@ -7,7 +7,7 @@
 body {
     position: relative;
 }
-/* *module content starts */
+/* *feeds content starts */
 .hero {
     padding: 3rem 3rem;
     position: relative;
@@ -37,12 +37,12 @@ nav ul li a.active span {
     bottom: -.8em;
     background: red;
 }
-.module-search {
+.feeds-search {
     display: flex;
     margin: 2em 0;
     justify-content: space-between;
 }
-.module-search input {
+.feeds-search input {
     border: var(--border);
     height: 4.5rem;
     width: 30%;
@@ -52,11 +52,11 @@ nav ul li a.active span {
     font-family: 'Poppins', 'FontAwesome'; 
 }
 
-.module-actions {
+.feeds-actions {
     display: flex;
     justify-content: space-between;
 }
-.module-actions button {
+.feeds-actions button {
     font-size: 1.3rem;
     display: flex;
     align-items: center;
@@ -76,13 +76,13 @@ nav ul li a.active span {
 .filter-btn i {
     color: var(--redBtn);
 }
-/* module top ends */
-/* *module table starts */
+/* feeds top ends */
+/* *feeds table starts */
 
-.module-table {
-    margin: 3em 0;
+.feeds-table {
+    margin: 2em 0;
 }
-.module-table table, th, td{
+.feeds-table table, th, td{
     border: solid 2px #d1cfcf; 
 }
 table {
@@ -121,13 +121,13 @@ table td {
     background-color: var(--redBtn);
 }
 
-.module-pagination {
+.feeds-pagination {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 2em;
 }
-.module-pagination button {
+.feeds-pagination button {
     text-align: center;
     font-size: 2rem;
     height: 4rem; width: 4rem;
@@ -135,79 +135,16 @@ table td {
     background-color: var(--createBtn);
     border-radius: 1rem;
 }
-/* module table ends */
-/* *filter popup starts*/
-#filter-popup {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 30%;
-    height: 30%;
-    visibility: hidden;
-    transform: translate(-50%, -50%) scale(0.01);
-    background: var(--white);
-    box-shadow: var(--box-shadow);
-    border-radius: 2rem;
-    padding: 1em 1.5em;
-    display: flex;
-    flex-direction: column;
-    transition: transform 0.2s;
-}
-#filter-popup.active {
-    visibility: visible;
-    transform: translate(-50%, -50%) scale(1);
-}
-#filter-popup span {
-    cursor: pointer;
-    font-size: 1.5rem;
-    color: var(--light-color);
-}
-h3 {
-    align-self: center;
-}
-.select-fields {
-    display: flex;
-    flex-direction: column;
-    gap: 2em;
-    margin: 1em 0;
-    padding: 0 3.5em;
-}
-.select-fields label {
-    font-size: 1.3rem;
-    font-weight: bold;
-}
-.select-fields div {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 2em 0 0;
-}
-.select-fields input {
-    border: var(--border);
-    width: 60%;
-    height: 2.5rem;
-}
-.select-fields select {
-    width: 60%;
-    height: 2.5rem;
-}
-.select-fields button {
-    height: 3rem;
-    font-size: 1.5rem;
-    border-radius: 3rem;
-    color: var(--white);
-    background-color: var(--createBtn);
-}
 
-/* filter popup ends */
-/* *module popup */
-#module-popup {
+/* feeds table ends */
+/* *feeds popup */
+#feeds-popup {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0.01);
     width: 40%;
-    height: 52rem;
+    height:75%;
     visibility: hidden;
     background: var(--white);
     box-shadow: var(--box-shadow);
@@ -215,7 +152,7 @@ h3 {
     transition: transform 0.2s;
     padding: 2rem 2.5rem;
 }
-#module-popup.active {
+#feeds-popup.active {
     visibility: visible;
     transform: translate(-50%, -50%) scale(1);
 }
@@ -229,33 +166,63 @@ h3 {
     cursor: pointer;
 }
 
-#module-popup .input-fields {
+#feeds-popup .input-fields {
     display: flex;
     flex-direction: column;
-    gap: 3.5em;
+    gap: 1em;
     margin: 2em 0;
     padding: 0 3.5em;
 }
-#module-popup .input-fields div {
+#feeds-popup .input-fields div {
     /* width: 100%; */
     border: var(--border);
     border-radius: .5rem;
 }
-#module-popup .input-fields div input {
+.feed-title {
+    display: flex;
+    align-items: center;
     width: 100%;
     height: 4rem;
-    font-size: 1.5rem;
+    font-size: 1.5rem; 
     font-weight: bold;
-    padding: 0 1.5em;
+    padding: 0 1em;
 }
-#module-popup .input-fields div textarea {
+#feeds-popup .input-fields div textarea {
     width: 100%;
     font-size: 1.3rem;
     padding: 1em;
-    min-height: 25rem; max-height: 25rem;
+    height: 7rem;
+    min-height: 5rem; max-height: 10rem;
     
 }
-#module-popup .input-fields button {
+#feeds-popup .input-fields div select {
+    width: 50%;
+    height: 2rem;
+}
+.date {
+    width: 50%;
+    border: var(--border);
+}
+#feeds-popup .feed-cover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 13rem;
+    /* max-height: 5rem; */
+}
+#output {
+    width: 50%;
+    height: 100%;
+}
+.select-feed-cover, .select-feed-files {
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1em;
+}
+
+#feeds-popup .input-fields button {
     background-color: var(--createBtn);
     color: var(--white);
     border-radius: 3rem;
@@ -279,4 +246,4 @@ h3 {
     visibility: visible;
 }
 
-/* module popup ends */
+/* feeds popup ends */
