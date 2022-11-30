@@ -1,0 +1,181 @@
+  <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin : Module</title>
+    <!-- font awesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- bootstrap cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css"
+    />
+    <!-- local admin css link -->
+    <link rel="stylesheet" href="../../css/admin/admin_module.css" />
+    <link rel="stylesheet" href="../../css/admin/admin.css" />
+
+    <!-- local js file -->
+    <script defer src="/js/admin/admin_module.js"></script>
+  </head>
+  <body>
+    <!-- main container starts -->
+
+    <div class="main-container d-flex">
+      <!-- sidebar div starts -->
+
+      <div class="sidebar shadow" id="side_nav">
+        <!-- sidebar top starts -->
+
+        <div class="header-box px-2 pt-3 pb-4">
+          <h1 class="fs-4">
+            <span class="bg-white text-dark shadow rounded px-2 mx-2">LOGO</span
+            ><span class="text-black">ePing!</span>
+          </h1>
+          <button class="btn d-md-none d-block close-btn px-1 py-0 text-white">
+            <i class="fas fa-stream"></i>
+          </button>
+        </div>
+
+        <!-- sidebar top ends -->
+
+        <!-- top navigation side panel starts-->
+        <ul class="list-unstyled">
+          <li>
+            <a class="px-3 py-2 d-block" href="/html/admin/admin.html"
+              ><i class="fa-solid fa-chart-line"></i> Dashboard</a
+            >
+          </li>
+          <li class="">
+            <a class="px-3 py-2 d-block" href="/html/admin/admin_manage.html"
+              ><i class="fa-solid fa-bars-progress"></i> Management</a
+            >
+          </li>
+          <li class="">
+            <a class="px-3 py-2 d-block" href="/html/admin/admin_module.html"
+              ><i class="fa-solid fa-book"></i></i> Roles and Incident</a
+            >
+          </li>
+          <li class="">
+            <a class="px-3 py-2 d-block" href="/html/admin/admin_module.html"
+              ><i class="fa-solid fa-book"></i></i> Saved</a
+            >
+          </li>
+          <li class="">
+            <a class="px-3 py-2 d-block" href="/html/admin/admin_module.html"
+              ><i class="fa-solid fa-book"></i></i> Notifications</a
+            >
+          </li>
+          <li class="">
+            <a class="px-3 py-2 d-block" href="/html/admin/admin_module.html"
+              ><i class="fa-solid fa-book"></i></i> Settings</a
+            > 
+          </li>
+          <li class="active">
+            <a class="px-3 py-2 d-block" href="/html/admin/admin_module.html"
+              ><i class="fa-solid fa-book"></i></i> Module</a
+            >
+          </li>
+        </ul>
+
+        <!-- top navigation side panel ends-->
+        <hr class="h-color mx-3" />
+
+        <!-- bottom navigation side panel starts-->
+        <ul class="list-unstyled">
+          <li>
+            <a class="px-3 py-2 d-block" href="#"
+              ><i class="fa-solid fa-right-from-bracket"></i> Logout</a
+            >
+          </li>
+        </ul>
+        <!-- bottom navigation side panel ends-->
+      </div>
+      <!-- sidebar div ends -->
+
+      <div class="content">
+        <section class="hero">
+          <div class="module-top">
+            <h1><span>Module</span> Management</h1>
+            <input type="text" placeholder="Search Module...">
+          </div>
+          <div class="module-action">
+              <button class="add-module" id="add-btn"><i class="fa-solid fa-circle-plus"></i>Create Module</button>
+          </div>
+          <div class="module-display">
+            <div class="module-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Cover</th>
+                    <th>Options</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>loreasd</td> 
+                    <td>loreasd</td>
+                    <td>loreasd</td>
+                    <td>loreasd</td>
+                    <td class="action">
+                      <button class="update-btn"><i class="fa-solid fa-pen"></i></button>
+                      <button class="delete-btn"><i class="fa-solid fa-trash"></i>  </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>loreasd</td> 
+                    <td>loreasd</td>
+                    <td>loreasd</td>
+                    <td>loreasd</td>
+                    <td class="action">
+                      <button class="update-btn"><i class="fa-solid fa-pen"></i></button>
+                      <button class="delete-btn"><i class="fa-solid fa-trash"></i>  </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>loreasd</td> 
+                    <td>loreasd</td>
+                    <td>loreasd</td>
+                    <td>loreasd</td>
+                    <td class="action">
+                      <button class="update-btn"><i class="fa-solid fa-pen"></i></button>
+                      <button class="delete-btn"><i class="fa-solid fa-trash"></i>  </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+        <!-- * module popup -->
+
+        <div id="add-popup">
+          <div class="input-fields">
+            <div class="close"><a href=""><i class="fa-solid fa-xmark"></i></a></div>
+            <div>
+              <input type="text" placeholder="Module Title" class="module-title">
+            </div>
+            <div>
+              <textarea name="" id="" cols="30" rows="10" placeholder="Module Description here...."></textarea>
+            </div>
+            <div class="upload-file">
+                <label for="">Select file</label>
+                <input type="file" class="">
+            
+            </div>
+            <div class="submit-module">
+              <button><i class="fa-solid fa-upload"></i>Upload Module</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

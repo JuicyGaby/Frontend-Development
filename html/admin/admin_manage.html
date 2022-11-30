@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin : Management</title>
+    <!-- font awesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- bootstrap cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css"
+    />
+    <!-- local css link -->
+    <link rel="stylesheet" href="../../css/admin/admin.css" />
+    <link rel="stylesheet" href="../../css/admin/admin_manage.css" />
+    <link rel="stylesheet" href="../../css/admin/admin_module.css" />
+  </head>
+  <body>
+    <!-- main container starts -->
+
+    <div class="main-container d-flex">
+      <!-- sidebar div starts -->
+
+      <div class="sidebar shadow" id="side_nav">
+        <!-- sidebar top starts -->
+
+        <div class="header-box px-2 pt-3 pb-4">
+          <h1 class="fs-4">
+            <span class="bg-white text-dark shadow rounded px-2 mx-2">LOGO</span
+            ><span class="text-black">ePing!</span>
+          </h1>
+          <button class="btn d-md-none d-block close-btn px-1 py-0 text-white">
+            <i class="fas fa-stream"></i>
+          </button>
+        </div>
+
+        <!-- sidebar top ends -->
+
+        <!-- top navigation side panel starts-->
+        <ul class="list-unstyled">
+          <li class="">
+            <a class="px-3 py-2 d-block" href="/html/admin/admin.html"
+              ><i class="fa-solid fa-chart-line"></i> Dashboard</a
+            >
+          </li>
+          <li class="active">
+            <a class="px-3 py-2 d-block" href="/html/admin/admin_manage.html"
+              ><i class="fa-solid fa-bars-progress"></i> Management</a
+            >
+          </li>
+          <li class="">
+            <a class="px-3 py-2 d-block" href="/html/admin/admin_module.html"
+              ><i class="fa-solid fa-book"></i></i> Roles and Incident</a
+            >
+          </li>
+          <li class="">
+            <a class="px-3 py-2 d-block" href="/html/admin/admin_module.html"
+              ><i class="fa-solid fa-book"></i></i> Saved</a
+            >
+          </li>
+          <li class="">
+            <a class="px-3 py-2 d-block" href="/html/admin/admin_module.html"
+              ><i class="fa-solid fa-book"></i></i> Notifications</a
+            >
+          </li>
+          <li class="">
+            <a class="px-3 py-2 d-block" href="/html/admin/admin_module.html"
+              ><i class="fa-solid fa-book"></i></i> Settings</a
+            > 
+          </li>
+          <li class="">
+            <a class="px-3 py-2 d-block" href="/html/admin/admin_module.html"
+              ><i class="fa-solid fa-book"></i> Module</a
+            >
+          </li>
+        </ul>
+
+        <!-- top navigation side panel ends-->
+        <hr class="h-color mx-3" />
+
+        <!-- bottom navigation side panel starts-->
+        <ul class="list-unstyled">
+          <li>  
+            <a class="px-3 py-2 d-block" href="#"
+              ><i class="fa-solid fa-right-from-bracket"></i> Logout</a
+            >
+          </li>
+        </ul>
+        <!-- bottom navigation side panel ends-->
+      </div>
+      <!-- sidebar div ends -->
+      <div class="content">
+        <section class="hero">
+          <div class="manage-top"></div>
+          <h2>User Management</h2>
+
+          <div class="tabsf">
+            <button class="tablinks" onclick="openCity(event, 'Filter')">Filter</button>
+            <button class="tablinks" onclick="openCity(event, 'Sort')">Sort</button>
+          </div>
+
+          <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'All')" id="defaultOpen">All</button>
+            <button class="tablinks" onclick="openCity(event, 'End User')">End User</button>
+            <button class="tablinks" onclick="openCity(event, 'EKA')">EKA</button>
+          </div>
+
+
+          <div id="All" class="tabcontent">
+            <div class="nav-action">
+              <div>
+                <p style="font-weight: bold; font-size: 20px; margin-top: 30px;">Emergency Key Actor</p>
+                <p>
+                  Lorem ipsum dolor sit amet,<br/>
+                  consectetur adipisicing elit.
+                </p>
+              </div>
+              <div>
+                <div class="module-top">
+                  <!-- <h1><span>Module</span> Management</h1> -->
+                  <input style="width: 330px; font-size: 10px;" type="text" placeholder="Search Users....">
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="module-display">
+              <div class="module-table1">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>Agency Name</th>
+                      <th>Contact No. </th>
+                      <th>Type</th>
+                      <th>Email</th>
+                      <th>Last Name</th>
+                      <th>First Name</th>
+                      <th>Account Type</th>
+                      <th>Options</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>loreasd</td> 
+                      <td>loreasd</td>
+                      <td>loreasd</td>
+                      <td>loreasd</td>
+                      <td>loreasd</td>
+                      <td>loreasd</td>
+                      <td>loreasd</td>
+                      <td>loreasd</td>
+                      <td class="action">
+                        <button class="update-btn"><i class="fa-solid fa-pen"></i></button>
+                        <button class="delete-btn"><i class="fa-solid fa-trash"></i>  </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>loreasd</td> 
+                      <td>loreasd</td>
+                      <td>loreasd</td>
+                      <td>loreasd</td>
+                      <td>loreasd</td>
+                      <td>loreasd</td>
+                      <td>loreasd</td>
+                      <td>loreasd</td>
+                      <td class="action">
+                        <button class="update-btn"><i class="fa-solid fa-pen"></i></button>
+                        <button class="delete-btn"><i class="fa-solid fa-trash"></i>  </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>loreasd</td> 
+                      <td>loreasd</td>
+                      <td>loreasd</td>
+                      <td>loreasd</td>
+                      <td>loreasd</td>
+                      <td>loreasd</td>
+                      <td>loreasd</td>
+                      <td>loreasd</td>
+                      <td class="action">
+                        <button class="update-btn"><i class="fa-solid fa-pen"></i></button>
+                        <button class="delete-btn"><i class="fa-solid fa-trash"></i>  </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>loreasd</td> 
+                      <td>loreasd</td>
+                      <td>loreasd</td>
+                      <td>loreasd</td>
+                      <td>loreasd</td>
+                      <td>loreasd</td>
+                      <td>loreasd</td>
+                      <td>loreasd</td>
+                      <td class="action">
+                        <button class="update-btn"><i class="fa-solid fa-pen"></i></button>
+                        <button class="delete-btn"><i class="fa-solid fa-trash"></i>  </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div id="End User" class="tabcontent">
+            <div class="nav-action">
+              <div>
+                <p style="font-weight: bold; font-size: 20px; margin-top: 30px;">Emergency Key Actor</p>
+                <p>Lorem ipsum dolor sit amet,<br/>
+                consectetur adipisicing elit.</p> 
+              </div>
+              <div>
+                <div class="module-top">
+                  <!-- <h1><span>Module</span> Management</h1> -->
+                  <input style="width: 330px; font-size: 10px;" type="text" placeholder="Search End Users....">
+                </div>
+              </div>
+            </div>
+            <div class="add-action">
+              <button><a href="/html/admin/add_user.html">Add User</a></button>
+              <button><a href="/html/admin/edit_user.html">Edit User</a></button>
+            </div>
+
+        <div class="module-display">
+          <div class="module-table1">
+            <table>
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Agency Name</th>
+                  <th>Contact No. </th>
+                  <th>Type</th>
+                  <th>Email</th>
+                  <th>Last Name</th>
+                  <th>First Name</th>
+                  <th>Options</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>loreasd</td> 
+                  <td>loreasd</td>
+                  <td>loreasd</td>
+                  <td>loreasd</td>
+                  <td>loreasd</td>
+                  <td>loreasd</td>
+                  <td>loreasd</td>
+                  <td class="action">
+                    <button class="update-btn"><i class="fa-solid fa-pen"></i></button>
+                    <button class="delete-btn"><i class="fa-solid fa-trash"></i>  </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>loreasd</td> 
+                  <td>loreasd</td>
+                  <td>loreasd</td>
+                  <td>loreasd</td>
+                  <td>loreasd</td>
+                  <td>loreasd</td>
+                  <td>loreasd</td>
+                  <td class="action">
+                    <button class="update-btn"><i class="fa-solid fa-pen"></i></button>
+                    <button class="delete-btn"><i class="fa-solid fa-trash"></i>  </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>loreasd</td> 
+                  <td>loreasd</td>
+                  <td>loreasd</td>
+                  <td>loreasd</td>
+                  <td>loreasd</td>
+                  <td>loreasd</td>
+                  <td>loreasd</td>
+                  <td class="action">
+                    <button class="update-btn"><i class="fa-solid fa-pen"></i></button>
+                    <button class="delete-btn"><i class="fa-solid fa-trash"></i>  </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>loreasd</td> 
+                  <td>loreasd</td>
+                  <td>loreasd</td>
+                  <td>loreasd</td>
+                  <td>loreasd</td>
+                  <td>loreasd</td>
+                  <td>loreasd</td>
+                  <td class="action">
+                    <button class="update-btn"><i class="fa-solid fa-pen"></i></button>
+                    <button class="delete-btn"><i class="fa-solid fa-trash"></i>  </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+          <div id="EKA" class="tabcontent">
+            <div class="nav-action">
+              <div>
+                <p style="font-weight: bold; font-size: 20px; margin-top: 30px;">Emergency Key Actor</p>
+            <p>Lorem ipsum dolor sit amet,<br/>
+              consectetur adipisicing elit.</p> 
+          </div>
+          
+          <div>
+            <div class="module-top">
+              <!-- <h1><span>Module</span> Management</h1> -->
+              <input style="width: 330px; font-size: 10px;" type="text" placeholder="Search EKA....">
+            </div>
+          </div>
+        </div>
+        <div class="add-action">
+          <button id="add-btn"><i class="fa-solid fa-circle-plus"></i><a href="/html/admin/add_eka.html">Add EKA</a></button>
+          <button><a href="/html/admin/edit_eka.html">Edit EKA</a></button>
+        </div>
+
+        <div class="module-display">
+          <div class="module-table1">
+            <table>
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Agency Name</th>
+                  <th>Contact No. </th>
+                  <th>Type</th>
+                  <th>Email</th>
+                  <th>Last Name</th>
+                  <th>First Name</th>
+                  <th>Options</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>loreasd</td> 
+                  <td>loreasd</td>
+                  <td>loreasd</td>
+                  <td>loreasd</td>
+                  <td>loreasd</td>
+                  <td>loreasd</td>
+                  <td>loreasd</td>
+                  <td class="action">
+                    <button class="update-btn"><i class="fa-solid fa-pen"></i></button>
+                    <button class="delete-btn"><i class="fa-solid fa-trash"></i>  </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>loreasd</td> 
+                  <td>loreasd</td>
+                  <td>loreasd</td>
+                  <td>loreasd</td>
+                  <td>loreasd</td>
+                  <td>loreasd</td>
+                  <td>loreasd</td>
+                  <td class="action">
+                    <button class="update-btn"><i class="fa-solid fa-pen"></i></button>
+                    <button class="delete-btn"><i class="fa-solid fa-trash"></i>  </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>loreasd</td> 
+                  <td>loreasd</td>
+                  <td>loreasd</td>
+                  <td>loreasd</td>
+                  <td>loreasd</td>
+                  <td>loreasd</td>
+                  <td>loreasd</td>
+                  <td class="action">
+                    <button class="update-btn"><i class="fa-solid fa-pen"></i></button>
+                    <button class="delete-btn"><i class="fa-solid fa-trash"></i>  </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>loreasd</td> 
+                  <td>loreasd</td>
+                  <td>loreasd</td>
+                  <td>loreasd</td>
+                  <td>loreasd</td>
+                  <td>loreasd</td>
+                  <td>loreasd</td>
+                  <td class="action">
+                    <button class="update-btn"><i class="fa-solid fa-pen"></i></button>
+                    <button class="delete-btn"><i class="fa-solid fa-trash"></i>  </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+        </section>
+      </div>
+    <!-- main container ends -->
+    <script src="../../js/admin/admin_manage.js"></script>
+  </body>
+</html>

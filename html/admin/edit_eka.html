@@ -1,0 +1,181 @@
+EDIT EKA
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Management :Edit EKA </title>
+    <!-- font awesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- bootstrap cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css"
+    />
+    <!-- local css link -->
+    <link rel="stylesheet" href="../../css/admin/admin.css" />
+    <link rel="stylesheet" href="../../css/admin/admin_manage.css" />
+    <link rel="stylesheet" href="../../css/admin/admin_module.css" />
+    <link rel="stylesheet" href="../../css/admin/add_user.css" />
+    <link rel="stylesheet" href="../../css/admin/add_eka.css" />
+  </head>
+  <body>
+    <!-- main container starts -->
+
+    <div class="main-container d-flex">
+      <!-- sidebar div starts -->
+
+      <div class="sidebar shadow" id="side_nav">
+        <!-- sidebar top starts -->
+
+        <div class="header-box px-2 pt-3 pb-4">
+          <h1 class="fs-4">
+            <span class="bg-white text-dark shadow rounded px-2 mx-2">LOGO</span
+            ><span class="text-black">ePing!</span>
+          </h1>
+          <button class="btn d-md-none d-block close-btn px-1 py-0 text-white">
+            <i class="fas fa-stream"></i>
+          </button>
+        </div>
+
+        <!-- sidebar top ends -->
+
+        <!-- top navigation side panel starts-->
+        <ul class="list-unstyled">
+          <li class="">
+            <a class="px-3 py-2 d-block" href="/html/admin/admin.html"
+              ><i class="fa-solid fa-chart-line"></i> Dashboard</a
+            >
+          </li>
+          <li class="active">
+            <a class="px-3 py-2 d-block" href="/html/admin/admin_manage.html"
+              ><i class="fa-solid fa-bars-progress"></i> Management</a
+            >
+          </li>
+          <li class="">
+            <a class="px-3 py-2 d-block" href="/html/admin/admin_module.html"
+              ><i class="fa-solid fa-book"></i></i> Roles and Incident</a
+            >
+          </li>
+          <li class="">
+            <a class="px-3 py-2 d-block" href="/html/admin/admin_module.html"
+              ><i class="fa-solid fa-book"></i></i> Saved</a
+            >
+          </li>
+          <li class="">
+            <a class="px-3 py-2 d-block" href="/html/admin/admin_module.html"
+              ><i class="fa-solid fa-book"></i></i> Notifications</a
+            >
+          </li>
+          <li class="">
+            <a class="px-3 py-2 d-block" href="/html/admin/admin_module.html"
+              ><i class="fa-solid fa-book"></i></i> Settings</a
+            > 
+          </li>
+          <li class="">
+            <a class="px-3 py-2 d-block" href="/html/admin/admin_module.html"
+              ><i class="fa-solid fa-book"></i> Module</a
+            >
+          </li>
+        </ul>
+
+        <!-- top navigation side panel ends-->
+        <hr class="h-color mx-3" />
+
+        <!-- bottom navigation side panel starts-->
+        <ul class="list-unstyled">
+          <li>  
+            <a class="px-3 py-2 d-block" href="#"
+              ><i class="fa-solid fa-right-from-bracket"></i> Logout</a
+            >
+          </li>
+        </ul>
+        <!-- bottom navigation side panel ends-->
+      </div>
+      <!-- sidebar div ends -->
+      <div class="content">
+        <section class="hero">
+          <div class="add-top"></div>
+          <li><a href="/html/admin/admin_manage.html">Back</a></li>
+          <h2>Edit Key Actor</h2>
+            <div class="edit-container">
+              <div class="edit-form">
+                <p1>Employee Information</p1>
+                <div class="input-fields">
+                  <div class="row1">
+                    <span class="details">Last Name</span>
+                    <input type="text">
+                    <span class="details">First Name</span>
+                    <input type="text">
+                  </div>
+                  <p1>Agency Information</p1>
+                  <div class="type-details">
+                    <span class="type-title">Emergency Type</span>
+                    <div class="category">
+                    <label for="">
+                      <span class="dot one"></span>
+                      <span class="role">Fire</span>
+                    </label>
+                    <label for="">
+                      <span class="dot one"></span>
+                      <span class="role">Suicide</span>
+                    </label>
+                    <label for="">
+                        <span class="dot one"></span>
+                        <span class="role">Typhoon</span>
+                      </label>
+                    </div>
+                  <div class="row2">
+                      <span class="details">Agency Name</span>
+                    <input type="text">
+                    <span class="details">Email Address</span>
+                    <input type="text">
+                  </div>
+                  <div class="row3">
+                    <span class="details">Agency Description</span>
+                    <input type="text">
+                    <span class="details">Password</span>
+                    <input type="text">
+                  </div>
+                  <div class="row4">
+                    <span class="details">Agency Contact</span>
+                    <input type="text">
+                    <span class="details">Confirm Password</span>
+                    <input type="text">
+                  <div>
+                    <div class="row5">
+                        <span class="details">Agency Address</span>
+                        <input type="text">
+                        <div class="atype-details">
+                            <span class="atype-title">Account Type</span>
+                            <div class="category">
+                            <label for="">
+                              <span class="dot one"></span>
+                              <span class="role">Key Actor</span>
+                            </label>
+                            <label for="">
+                              <span class="dot one"></span>
+                              <span class="role">End User</span>
+                            </label>
+                      </div>
+                  </div>
+                  <div class="submission">
+                    <button>Update</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          </div>
+        </div>
+      </div>
+        </section>
+      </div>
+    <!-- main container ends -->
+    <script src="../../js/admin/admin_manage.js"></script>
+  </body>
+</html>
