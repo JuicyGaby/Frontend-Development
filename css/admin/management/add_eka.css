@@ -1,0 +1,7 @@
+@import "/css/admin/admin.css";
+:root {
+    --updateBtn : #94d2bd;
+    --redBtn : #f22e2e;
+    --createBtn : #fd4f3d;
+    --downloadBtn : #6c757d;
+}
