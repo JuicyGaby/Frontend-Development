@@ -84,6 +84,9 @@ hr.h-color {
     padding: 3rem 3rem;
     position: relative;
 }
+.hero h1 span {
+    color: var(--lightred);
+}
 /* .hero {
     padding: 3rem 3rem;
     position: relative;
