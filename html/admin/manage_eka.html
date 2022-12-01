@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin : Manage (All)</title>
+    <title>Admin : Manage (EKA)</title>
     <!-- font awesome cdn link -->
     <link
       rel="stylesheet"
@@ -20,8 +20,6 @@
     <link rel="stylesheet" href="/css/admin/module/admin_manage.css">
     <link rel="stylesheet" href="/css/admin/module/manage_enduser.css">
     <link rel="stylesheet" href="/css/admin/module/manage_eka.css">
-    
-
     <!-- local js file -->
     <script defer src="/js/admin/admin_module.js"></script>
   </head>
@@ -105,7 +103,10 @@
               <p style="font-weight: bold; font-size: 20px; margin-top: 30px;">Emergency Key Actor</p>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, itaque?</p>
             </div>
-            <input type="text" placeholder="&#xF002; &nbsp&nbsp Search Users.... ">
+            <input type="text" placeholder="&#xF002; &nbsp&nbsp Search EKA.... ">
+          </div>
+          <div class="module-actions">
+            <button class="create-btn"><i class="fa-solid fa-circle-plus"></i>Add EKA</button>
           </div>
           <div class="user-actions">
             <button class="filter-btn">Sort<i class="fa-solid fa-sort"></i></button>
@@ -122,14 +123,12 @@
                     <th>Email</th>
                     <th>Last Name</th>
                     <th>First Name</th>
-                    <th>Account Type</th>
                     <th>Options</th>
                     
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>loreasd</td> 
+                  <tr> 
                     <td>loreasd</td>
                     <td>loreasd</td>
                     <td>loreasd</td>
@@ -150,6 +149,18 @@
                     <td>loreasd</td>
                     <td>loreasd</td>
                     <td>loreasd</td>
+                    <td class="action">
+                      <button class="update-btn"><i class="fa-solid fa-pen"></i></button>
+                      <button class="delete-btn"><i class="fa-solid fa-trash"></i>  </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>loreasd</td> 
+                    <td>loreasd</td>
+                    <td>loreasd</td>
+                    <td>loreasd</td>
+                    <td>loreasd</td>
+                    <td>loreasd</td>
                     <td>loreasd</td>
                     <td class="action">
                       <button class="update-btn"><i class="fa-solid fa-pen"></i></button>
@@ -164,7 +175,6 @@
                     <td>loreasd</td>
                     <td>loreasd</td>
                     <td>loreasd</td>
-                    <td>loreasd</td>
                     <td class="action">
                       <button class="update-btn"><i class="fa-solid fa-pen"></i></button>
                       <button class="delete-btn"><i class="fa-solid fa-trash"></i>  </button>
@@ -172,21 +182,6 @@
                   </tr>
                   <tr>
                     <td>loreasd</td> 
-                    <td>loreasd</td>
-                    <td>loreasd</td>
-                    <td>loreasd</td>
-                    <td>loreasd</td>
-                    <td>loreasd</td>
-                    <td>loreasd</td>
-                    <td>loreasd</td>
-                    <td class="action">
-                      <button class="update-btn"><i class="fa-solid fa-pen"></i></button>
-                      <button class="delete-btn"><i class="fa-solid fa-trash"></i>  </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>loreasd</td> 
-                    <td>loreasd</td>
                     <td>loreasd</td>
                     <td>loreasd</td>
                     <td>loreasd</td>
@@ -206,9 +201,31 @@
               <button id="next-btn"><i class="fa-solid fa-caret-right"></i></button>
             </div>  
           </section>
+          <!-- *filter popup -->
+          <div id="filter-popup">
+            <div class="close-action">
+              <span id="filter-close-btn"><i class="fa-solid fa-circle-xmark"></i></span>
+            </div>
+            <h3>Module Filter</h3>
+            <hr>
+            <div class="select-fields">
+              <div class="">
+                <label for="">Go to: </label>
+                <input type="date" name="" id="">
+              </div>
+              <div class="">
+                <label for="">Type: </label>
+                <select name="" id="">
+                  <option value="">EKA</option>
+                  <option value="">EKA</option>
+                </select>
+              </div>
+              <button>Filter</button>
+            </div>
           </div>
-        </div>
+          </div>
         </div>
       </div>
     </body>
   </html>
+  
