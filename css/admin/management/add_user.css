@@ -16,6 +16,9 @@
     font-size: 4rem;
     font-weight: 500;
 }
+.hero h1 span {
+    color: var(--lightred);
+}
 label {
     display: block;
     font-weight: bold;
