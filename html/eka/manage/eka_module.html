@@ -79,7 +79,7 @@
       <div class="content">
         <section class="hero">
           <div class="hero-wrapper"></div>
-          <h1>Module Management</h1>
+          <h1><span>Feed</span> Management</h1>
           <nav>
             <ul>
               <li>
@@ -91,7 +91,7 @@
             </ul>
           </nav>
           <hr />
-          <div class="module-search">
+          <div class="feeds-search">
             <div class="">
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum,
@@ -100,25 +100,25 @@
             </div>
             <input
               type="text"
-              placeholder="&#xF002; &nbsp&nbsp Search Modules... "
+              placeholder="&#xF002; &nbsp&nbsp Search previous post... "
             />
           </div>
-          <div class="module-actions">
+          <div class="feeds-actions">
             <button class="create-btn">
-              <i class="fa-solid fa-circle-plus"></i>Create Module
+              <i class="fa-solid fa-circle-plus"></i>Create Post
             </button>
             <button class="filter-btn">
               Filter<i class="fa-solid fa-filter"></i>
             </button>
           </div>
-          <div class="module-table">
+          <div class="feeds-table">
             <table>
               <thead>
                 <tr>
-                  <th>Module ID</th>
-                  <th>Module Title</th>
-                  <th>Module Description</th>
-                  <th>Module EKA</th>
+                  <th>Post ID</th>
+                  <th>Post Title</th>
+                  <th>Post Description</th>
+                  <th>Expiry Date</th>
                   <th>Options</th>
                 </tr>
               </thead>
@@ -196,8 +196,60 @@
               </tbody>
             </table>
           </div>
+          <div class="feeds-pagination">
+            <button id="prev-btn">
+              <i class="fa-solid fa-caret-left"></i>
+            </button>
+            <button id="next-btn">
+              <i class="fa-solid fa-caret-right"></i>
+            </button>
+          </div>
         </section>
-        <!-- * module popup -->
+        <!-- * feeds popup -->
+        <div id="feeds-popup">
+          <div class="close-action">
+            <span id="close-btn"><i class="fa-solid fa-circle-xmark"></i></span>
+          </div>
+          <div class="input-fields">
+            <div class="feed-title">
+              <input type="text" placeholder="Post Title" />
+            </div>
+            <div class="">
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Post Description here...."
+              ></textarea>
+            </div>
+            <div class="feed-cover">
+              <img id="output" />
+            </div>
+            <div class="select-feed-cover">
+              <label for="">Select Cover</label>
+              <input type="file" accept="image/*" onchange="loadFile(event)" />
+            </div>
+            <div class="select-feed-files">
+              <label for="">Select Files</label>
+              <input multiple type="file" />
+            </div>
+            <div class="select-feed-files">
+              <label for="">Feed Type</label>
+              <select name="" id="">
+                <option disabled selected value>-- Select Type --</option>
+                <option value="">High</option>
+                <option value="">Medium</option>
+                <option value="">Low</option>
+              </select>
+            </div>
+            <div class="select-feed-files">
+              <label for="">Expiration Date</label>
+              <input class="date" type="date" />
+            </div>
+            <button>Upload Post</button>
+          </div>
+        </div>
       </div>
     </div>
     <!-- main container ends -->
