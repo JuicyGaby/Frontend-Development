@@ -61,7 +61,7 @@
               ><i class="fa-solid fa-bars"></i></i> Management</a
             >
           </li>
-          <li class="active">
+          <li class="">
             <a class="px-3 py-2 d-block" href="/html/admin/admin_module.html"
               ><i class="fa-solid fa-book"></i></i> Module</a
             >
@@ -92,8 +92,8 @@
           <h1>User Management</h1>
           <nav>
             <ul>
-              <li><a href="/html/admin/admin_manage.html" class="active" id="defaultOpen"><span></span> All  </a></li> 
-              <li><a href="/html/admin/manage_enduser.html" class="active"><span></span> End User </a></li>
+              <li><a href="/html/admin/admin_manage.html" class="" id="defaultOpen"><span></span> All  </a></li> 
+              <li><a href="/html/admin/manage_enduser.html" class=""><span></span> End User </a></li>
               <li><a href="/html/admin/manage_eka.html" class="active"><span></span> EKA </a></li> 
             </ul>
           </nav>
@@ -118,12 +118,10 @@
                   <tr>
                     <th>ID</th>
                     <th>Agency Name</th>
-                    <th>Contact No.</th>
-                    <th>Type</th>
+                    <th>Agency Contact</th>
                     <th>Email</th>
-                    <th>Last Name</th>
-                    <th>First Name</th>
-                    <th>Options</th>
+                    <th>Agency Type</th>
+                    <th>Action</th>
                     
                   </tr>
                 </thead>
@@ -134,29 +132,12 @@
                     <td>loreasd</td>
                     <td>loreasd</td>
                     <td>loreasd</td>
-                    <td>loreasd</td>
-                    <td>loreasd</td>
                     <td class="action">
                       <button class="update-btn"><i class="fa-solid fa-pen"></i></button>
                       <button class="delete-btn"><i class="fa-solid fa-trash"></i>  </button>
                     </td>
                   </tr>
                   <tr>
-                    <td>loreasd</td> 
-                    <td>loreasd</td>
-                    <td>loreasd</td>
-                    <td>loreasd</td>
-                    <td>loreasd</td>
-                    <td>loreasd</td>
-                    <td>loreasd</td>
-                    <td class="action">
-                      <button class="update-btn"><i class="fa-solid fa-pen"></i></button>
-                      <button class="delete-btn"><i class="fa-solid fa-trash"></i>  </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>loreasd</td> 
-                    <td>loreasd</td>
                     <td>loreasd</td>
                     <td>loreasd</td>
                     <td>loreasd</td>
@@ -168,8 +149,6 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>loreasd</td> 
-                    <td>loreasd</td>
                     <td>loreasd</td>
                     <td>loreasd</td>
                     <td>loreasd</td>
@@ -181,8 +160,17 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>loreasd</td> 
                     <td>loreasd</td>
+                    <td>loreasd</td>
+                    <td>loreasd</td>
+                    <td>loreasd</td>
+                    <td>loreasd</td>
+                    <td class="action">
+                      <button class="update-btn"><i class="fa-solid fa-pen"></i></button>
+                      <button class="delete-btn"><i class="fa-solid fa-trash"></i>  </button>
+                    </td>
+                  </tr>
+                  <tr>
                     <td>loreasd</td>
                     <td>loreasd</td>
                     <td>loreasd</td>
@@ -206,7 +194,8 @@
             <div class="close-action">
               <span id="filter-close-btn"><i class="fa-solid fa-circle-xmark"></i></span>
             </div>
-            <h3>Module Filter</h3>
+            <h3>EKA Filter</h3>
+            <p>Use Module Filter to find certain modules.</p>
             <hr>
             <div class="select-fields">
               <div class="">
@@ -217,7 +206,7 @@
                 <label for="">Type: </label>
                 <select name="" id="">
                   <option value="">EKA</option>
-                  <option value="">EKA</option>
+                  <option value="">End User</option>
                 </select>
               </div>
               <button>Filter</button>
