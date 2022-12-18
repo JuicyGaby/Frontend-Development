@@ -65,9 +65,11 @@ section {
 .login-field {
     width: 95%;
 }
-/* .login-nav {
+.login-nav {
     display: none;
-} */
+
+}
+
 .login-field h1 {
     font-size: 4rem;
     font-weight: 700;
@@ -118,23 +120,37 @@ section {
 }
 
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 700px) {
+    html {
+        font-size: .5rem;
+    }
+
     .bg-image {
         display: none;
     }
     .login {
         width: 100%;
         background: url(/imgs/hospital.png);
-        /* background-position: center; */
         background-repeat: no-repeat;
         background-size: cover;   
-        /* background-color: lightgrey; */
     }
     
     .login-field {
         background: var(--white);
         border: var(--border);
-        padding: 5em 2em;
+        padding: 3em 2em;
         border-radius: 2rem;
+    }
+    .login-nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .login-nav span {
+        width: 50px; height: 50px;
+        background-color: gray;
+        border-radius: 50%;
+        margin: 0 0 2em;
+        cursor: pointer;
     }
 }
