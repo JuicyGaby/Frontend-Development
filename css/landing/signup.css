@@ -69,10 +69,13 @@ nav ul li{
 .signup-form {
     background-color: var(--white);
     width: 60%;
-    height: 60rem;
+    height: 63em;
     border-radius: 3rem;
     box-shadow: var(--box-shadow);
-    padding: 5rem 6rem;
+    padding: 5em 4em;
+}
+.logo {
+    display: none;
 }
 .signup-form h1 {
     font-size: 3.5rem;
@@ -85,9 +88,9 @@ nav ul li{
     border: 1px solid var(--light-color);
     width: 30%;
     height: 4rem;
-    padding: 0 2rem;
+    padding: 0 1em;
     border-radius: .5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2em;
     transition: all .3s ease-in-out;
     background: #f4f4f4;
 }
@@ -132,19 +135,37 @@ nav ul li{
 
 @media all and (max-width: 700px) {
     html {
-        font-size: .5rem;
+        font-size: 42%;
     }
-
+    nav {
+        display: none;
+    }
     .signup-form {
         width: 95%;
         height: 60%;
 
         padding: 4rem 4rem;
     }
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .logo span {
+        width: 5rem; height: 5rem;
+        background-color: gray;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .signup-form h1 {
+        font-size: 3.5rem;
+        margin: .5em 0;
+        text-align: center;
+    }
     .input-fields input {
         width: 100%;
         height: 4rem;
-        padding: 0 2rem;
+        padding: 0 .5em;
         border-radius: .5rem;
         margin: .5em 0;
     }
@@ -154,6 +175,13 @@ nav ul li{
     }
     .submission button {
         width: 50%; height: 4rem;
-        margin: 1.5em 0;
+        margin: 1.5em 0 2em;
     }   
+}
+
+
+@media all and (max-width: 400px) {
+    html {
+        font-size: 40%;
+    }
 }
